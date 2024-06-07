@@ -27,10 +27,10 @@ import About from './pages/About.tsx'
 export const rootElement = ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     {/* <RouterProvider router={router}/> */}
-    <HashRouter basename="/market">
+    <HashRouter basename="#/market/">
       <Routes>
-        <Route path="/market/" element={<App />}/>
-        <Route path="/market/#/about" element={<About />}/>
+        <Route path="#/market/" element={<App />}/>
+        <Route path="#/market/#/about" element={<About />}/>
       </Routes>
     </HashRouter>
   </React.StrictMode>,
