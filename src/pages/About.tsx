@@ -1,6 +1,6 @@
 function About(): any {
     return (
-        About
+        <p>About About About</p>
     )
 }
 
