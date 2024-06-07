@@ -27,7 +27,7 @@ import About from './pages/About.tsx'
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     {/* <RouterProvider router={router}/> */}
-    <HashRouter>
+    <HashRouter basename='/market'>
       <Routes>
         <Route path='/market' Component={App}/>
         <Route path='/market/about' Component={About}/>
