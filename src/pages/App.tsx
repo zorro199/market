@@ -13,11 +13,11 @@ const router = createBrowserRouter([
           element: <Home />,
         },
         {
-          path: "/about",
+          path: "/market/about",
           element: <About />,
         },
         {
-          path: "/favorites",
+          path: "/market/favorites",
           element: <Favorites />,
         },
       ],
@@ -31,4 +31,5 @@ function App() {
         </div>
     )
 }
+
 export default App
