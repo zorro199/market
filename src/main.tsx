@@ -2,11 +2,11 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 import './index.css'
-import { RouterProvider, createHashRouter} from 'react-router-dom'
+import { RouterProvider, createBrowserRouter} from 'react-router-dom'
 import About from './pages/About.tsx'
 
 
-const router = createHashRouter([
+const router = createBrowserRouter([
   {
     path: "/market/",
     element: <App />,
