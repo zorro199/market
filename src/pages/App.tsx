@@ -6,7 +6,7 @@ import Favorites from '../components/favorites/Favorites'
 const router = createBrowserRouter([
     {
       path: "/market/",
-      element: <About />,
+      element: <Home />,
       children: [
         {
           path: "/market/",
