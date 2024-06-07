@@ -1,6 +1,7 @@
 import {RouterProvider, createBrowserRouter } from 'react-router-dom'
 import About from './About'
 import Home from '../components/home/Home'
+import Favorites from '../components/favorites/Favorites'
 
 const router = createBrowserRouter([
     {
@@ -12,8 +13,12 @@ const router = createBrowserRouter([
           element: <Home />,
         },
         {
-          path: "http://localhost:5173/market/market/about",
+          path: "/market/about",
           element: <About />,
+        },
+        {
+          path: "/market/favorites",
+          element: <Favorites />,
         },
       ],
     },
