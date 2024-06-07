@@ -8,12 +8,12 @@ function Header() {
     return (
         <div className={styles.header}>
             <h1>
-                <Link className={styles.mainLink} to={'/'}>Product store</Link>
+                <Link className={styles.mainLink} to={'https://zorro199.github.io/market'}>Product store</Link>
                 </h1>
             <div className={styles.info}>
-            <Link className={styles.about} to={'/market/about'}>About</Link>
+            <Link className={styles.about} to={'https://zorro199.github.io/market/about'}>About</Link>
             <div className={styles.favicon}>
-                <Link to="/market/favorites">
+                <Link to="https://zorro199.github.io/market/favorites">
                 <BsBookmarkHeartFill fontSize={30} color='#013225'/>
                 </Link>
             <span>{favorites.length}</span>
