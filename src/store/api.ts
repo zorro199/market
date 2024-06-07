@@ -21,16 +21,16 @@ export const api = createApi({
     baseQuery: fetchBaseQuery({
         baseUrl: API_URL
     }),
-    extractRehydrationInfo(action, {}): any {
-        if (isHydrateAction(action)) {
-          // when persisting the api reducer
-          if (action.key === 'key used with redux-persist') {
-            return action.payload
-          }
-          // When persisting the root reducer
-          return action.payload[api.reducerPath]
-        }
-      },
+    // extractRehydrationInfo(action, {}): any {
+    //     if (isHydrateAction(action)) {
+    //       // when persisting the api reducer
+    //       if (action.key === 'key used with redux-persist') {
+    //         return action.payload
+    //       }
+    //       // When persisting the root reducer
+    //       return action.payload[api.reducerPath]
+    //     }
+    //   },
     endpoints: builder => ({
         getProduct: builder.query<IProduct[], null>({
             query: () => '',
