@@ -13,11 +13,11 @@ const router = createBrowserRouter([
           element: <Home />,
         },
         {
-          path: "https://zorro199.github.io/market/about",
+          path: "/market/about",
           element: <About />,
         },
         {
-          path: "https://zorro199.github.io/market/favorites",
+          path: "/market/favorites",
           element: <Favorites />,
         },
       ],
@@ -31,5 +31,4 @@ function App() {
         </div>
     )
 }
-// App
 export default App
