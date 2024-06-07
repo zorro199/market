@@ -8,15 +8,15 @@ import About from './pages/About.tsx'
 
 const router = createHashRouter([
   {
-    path: "/market/",
+    path: "#/market/",
     element: <App />,
     children: [
       {
-        path: "/market/",
+        path: "#/market/",
         element: <App />,
       },
       {
-        path: "/market/about",
+        path: "#/market/about",
         element: <About />,
       },
     ],
