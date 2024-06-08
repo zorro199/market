@@ -2,10 +2,12 @@
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+Этот проект подразумевает собой интернет магазин с различными товарами, можно добавить в избранное и посмотреть список в каталоге.
+Цель данного проекта было использовать и протестировать технологию Redux-toolkit и RTK-query, для возможности хранить избранные товары.
+Также использовал localStorage, а длдя гибкой настройки использовал redux-persist, для того чтобы после перезагрузки страницы сохранялось состояние.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![ScreenShot](https://github.com/zorro199/product-store-react/blob/main/public/screen1.png)
+![ScreenShot](https://github.com/zorro199/product-store-react/blob/main/public/screen2.png)
 
 ## Expanding the ESLint configuration
 
