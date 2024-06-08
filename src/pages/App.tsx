@@ -1,22 +1,12 @@
 import {RouterProvider, createBrowserRouter } from 'react-router-dom'
-import About from './About'
+//import About from './About'
 import Home from '../components/home/Home'
-import Favorites from '../components/favorites/Favorites'
+//import Favorites from '../components/favorites/Favorites'
 
 const router = createBrowserRouter([
     {
       path: "/market/",
       element: <Home />,
-      children: [
-        {
-          path: "/market/about",
-          element: <About />,
-        },
-        {
-          path: "/market/favorites",
-          element: <Favorites />,
-        },
-      ],
     },
   ])
 
