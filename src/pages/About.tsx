@@ -6,7 +6,7 @@ function About() {
         <div className={styles.wrapper}>
         <Header />
             <div className={styles.favorites}>
-                <p>
+                <p style={{padding: '30px'}}>
                     Сайт представляет собой онлайн магазин товаров. 
                     И является моим пет проектом. <br />
                 <a href="https://github.com/zorro199" 
