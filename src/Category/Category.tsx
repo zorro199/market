@@ -7,10 +7,8 @@ import FavoriteItem from '../components/product-item/FavoriteItem'
 function Category() {
     const { data } = useGetProductQuery(null)
     const [category, setCategory] = useState("men's clothing")
-
     useMemo(() => 
         category, [category])
-
     return (
         <div className={styles.wrapper}>
         <Header />
@@ -30,7 +28,7 @@ function Category() {
                 }
             </div>
             <footer>
-                <p>&copy; Product store by Zaur</p>
+                <p>&copy; Product store designed by Zaur</p>
             </footer>
         </div>
     )
