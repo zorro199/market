@@ -11,7 +11,7 @@ function Header() {
                 <Link className={styles.mainLink} to={'/market'}>Product store</Link>
                 </h1>
             <div className={styles.info}>
-            <Link className={styles.about} to={'/market/about/'}>About</Link>
+            <Link className={styles.about} to={'/market/category/'}>Категории</Link>
             <div className={styles.favicon}>
                 <Link to="/market/favorites/">
                 <BsBookmarkHeartFill fontSize={30} color='#013225'/>

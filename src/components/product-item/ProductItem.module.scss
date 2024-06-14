@@ -18,7 +18,8 @@
     >h3 {
         width: 100%;
         height: 15%;
-        overflow-x: scroll;
+        color: #083328;
+        overflow-y: scroll;
         >span {
             font-weight: 800;
         }
@@ -28,6 +29,7 @@
         width: 100%;
         height: 50px;
         overflow-y: scroll;
+        color: #1a1c1a;
         font-weight: 500;
         >span {
             font-weight: 700;
@@ -39,7 +41,6 @@
     }
 
     >button {
-        background-color: #003225;
         border: none;
         outline: none;
         color: #fff;
@@ -51,7 +52,7 @@
         transition: background-color 0.4s ease-in-out;
 
         &:hover {
-            background-color: #be3131;
+            background-color: #15757e;
         }
     }
 }

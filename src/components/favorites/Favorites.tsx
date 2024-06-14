@@ -15,7 +15,7 @@ function Favorites() {
         )}
         </div>
         <footer>
-          <p>&copy; Product store by Zaur</p>
+          <p>&copy; Product store designed by Zaur</p>
           </footer>
         </div>
     )

@@ -12,6 +12,7 @@ function App() {
   return (
     <div className={styles.home}>
       <Header />
+      <h2>Топ товаров</h2>
       <div className={styles.main}>
         {
           isLoading ? <div>Loading...</div>
@@ -24,12 +25,8 @@ function App() {
         totalItem={data?.length}
         paginate={paginate} 
         />
-        {/* <div className={styles.buttons}>
-          <button onClick={prevPage}>Назад</button>
-          <button onClick={nextPage}>Вперед</button>
-        </div> */}
         <footer>
-          <p>&copy; Product store by Zaur</p>
+          <p>&copy; Product store designed by Zaur</p>
           </footer>
     </div>
   )
