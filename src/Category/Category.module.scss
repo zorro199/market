@@ -63,6 +63,15 @@
         }
     }
 }
+// ----
+
+@media only screen and (min-width: 1280px) {
+    .wrapper {
+        width: 1280px;
+        margin: auto;
+        box-shadow: 0px 10px 10px #003225;
+    }
+}
 
 @media only screen and (max-width: 840px) {
     .wrapper {
