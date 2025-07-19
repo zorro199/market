@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react"
-import { useGetProductQuery } from "../../store/api"
+import { useState } from "react"
+import { useGetProductQuery } from "../store/api"
 
 
 export function usePagination() {
@@ -14,11 +14,7 @@ export function usePagination() {
   const prevPage = () => setCurrentPage(prev => prev + 1)
   const nextPage = () => setCurrentPage(next => next + 1)
 
-  useEffect(() => {
-    data
-  }, [])
-  
-  const paginate = (pageNumber: any) => {
+  const paginate = (pageNumber: number) => {
     setCurrentPage(pageNumber)
   }
 

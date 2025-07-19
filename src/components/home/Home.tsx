@@ -3,7 +3,7 @@ import styles from './Home.module.scss'
 import Header from '../Header/Header'
 import { useGetProductQuery } from '../../store/api'
 import Pagination from './Pagination'
-import { usePagination } from './usePagination'
+import { usePagination } from '../../hooks/usePagination'
 
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
     </div>
     <Pagination 
         itemPerPage={itemPerPage} 
-        totalItem={data?.length}
+        totalItem={data?.length ?? 0}
         paginate={paginate} 
         />
         <footer>
