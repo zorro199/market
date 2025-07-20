@@ -18,10 +18,12 @@ function FavoriteItem( {product}: IProductItem ) {
                 <h3>Name: <span>{product.title}</span></h3>
                 <p>{product.description}</p>
                 <p>Price: <span>{product.price}$</span></p>
+                <button style={{backgroundColor: isExist ? '#99280f' : '#003225'}} 
+                    onClick={() => togleFavorites(product)} >
                 {
-                isExist ? <button style={{backgroundColor: '#99280f'}} onClick={() => togleFavorites(product)}>Удалить из избранных</button>
-                : <button style={{backgroundColor: '#003225'}} onClick={() => togleFavorites(product)}>Добавить в избранное</button>
+                    isExist ? "Удалить из корзины" : "Добавить в корзину"
                 }
+            </button>
             </div>
         </div>
     )
