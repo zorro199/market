@@ -1,6 +1,12 @@
 import styles from './Home.module.scss'
 
-function Pagination({itemPerPage, totalItem, paginate}: any) {
+interface pagesOfNumber {
+    itemPerPage: number,
+    totalItem: number,
+    paginate: (pageNumber: number) => void
+}
+
+function Pagination ( {itemPerPage, totalItem, paginate}: pagesOfNumber) {
     const pageNumbers = []
     for (let i = 1; i <= Math.ceil(totalItem / itemPerPage); i++) {
         pageNumbers.push(i)
